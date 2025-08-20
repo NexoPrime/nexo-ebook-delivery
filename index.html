@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXO Elite | Build & Boost Your Credit - USA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <style>
+        /* Critical CSS - Inlined for initial render */
+        :root {
+            --primary: #0066ff;
+            --primary-glow: #0066ff80;
+            --secondary: #00c4ff;
+            --accent: #8a2be2;
+            --dark: #0a0a18;
+            --darker: #050510;
+            --light: #f0f5ff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+            color: var(--light);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(5, 5, 16, 0.95);
+            padding: 15px 0;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .brand-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .brand-name {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+            font-size: 1.8rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+        
+        .book-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        
+        .book-subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--secondary);
+        }
+        
+        .main-content {
+            padding: 30px 0;
+            position: relative;
+        }
+        
+        .ebook-preview, .download-section, .whatsapp-section, .testimonial {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .preview-header, .download-header, .whatsapp-header {
+            background: linear-gradient(90deg, rgba(0, 102, 255, 0.3), rgba(138, 43, 226, 0.3));
+            color: white;
+            padding: 15px;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .preview-content, .download-content, .whatsapp-content {
+            padding: 20px;
+        }
+        
+        .preview-feature {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .feature-icon {
+            color: var(--primary);
+            font-size: 1.5rem;
+            min-width: 30px;
+        }
+        
+        .download-formats {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .format-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.2), rgba(0, 196, 255, 0.2));
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 1px solid rgba(0, 102, 255, 0.3);
+        }
+        
+        .format-icon {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+        
+        .download-all {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 15px;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(126, 34, 206, 0.4));
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid rgba(138, 43, 226, 0.4);
+        }
+        
+        .security-note {
+            background: rgba(0, 102, 255, 0.15);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid rgba(0, 102, 255, 0.3);
+        }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        footer {
+            background: rgba(5, 5, 16, 0.95);
+            color: white;
+            padding: 30px 0 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(0, 102, 255, 0.3);
+        }
+        
+        /* USA Flag Element */
+        .usa-flag {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 40px;
+            height: 24px;
+            background: linear-gradient(180deg, 
+                #b22234 0%, #b22234 16.66%,
+                white 16.66%, white 33.32%,
+                #b22234 33.32%, #b22234 49.98%,
+                white 49.98%, white 66.64%,
+                #b22234 66.64%, #b22234 83.3%,
+                white 83.3%, white 100%);
+            border: 1px solid #3c3b6e;
+        }
+        
+        .usa-flag::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 13px;
+            background: #3c3b6e;
+        }
+        
+        /* Responsive Adjustments */
+        @media (min-width: 768px) {
+            .book-title {
+                font-size: 2.2rem;
+            }
+            
+            .download-formats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .brand-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .usa-flag {
+                position: relative;
+                right: auto;
+                top: auto;
+                margin: 0 auto 15px;
+            }
+        }
+    </style>
+    <!-- Deferred CSS for non-critical styles -->
+    <style id="deferred-styles">
+        /* This will be loaded after the critical content */
+        :root {
+            --accent-glow: #8a2be280;
+            --success: #00ff9d;
+            --success-glow: #00ff9d80;
+            --premium-gold: #ffd700;
+            --premium-glow: #ffd70080;
+        }
+        
+        .grid-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 102, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 102, 255, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        @media (min-width: 992px) {
+            .content-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .ebook-preview::before, .download-section::before, .whatsapp-section::before, .testimonial::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            z-index: -1;
+            background: linear-gradient(45deg, var(--primary), var(--accent), var(--premium-gold), var(--primary));
+            background-size: 400% 400%;
+            animation: glowing-border 3s ease infinite;
+            border-radius: 14px;
+        }
+        
+        @keyframes glowing-border {
+            0% { background-position: 0% 50%; opacity: 0.7; }
+            50% { background-position: 100% 50%; opacity: 1; }
+            100% { background-position: 0% 50%; opacity: 0.7; }
+        }
+        
+        .preview-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            animation: pulse 3s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 15px var(--primary-glow); transform: scale(1); }
+            50% { box-shadow: 0 0 25px var(--accent-glow); transform: scale(1.03); }
+            100% { box-shadow: 0 0 15px var(--primary-glow); transform: scale(1); }
+        }
+        
+        .preview-icon i {
+            font-size: 2.5rem;
+            color: white;
+        }
+        
+        .preview-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .preview-feature:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .format-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .format-btn:hover::before {
+            left: 100%;
+        }
+        
+        .format-btn:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary);
+        }
+        
+        .download-all::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .download-all:hover::before {
+            left: 100%;
+        }
+        
+        .download-all:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+        
+        .whatsapp-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            animation: pulse 3s infinite;
+        }
+        
+        .whatsapp-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .whatsapp-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .trust-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100px;
+        }
+        
+        .badge-icon {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        
+        .testimonial {
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        
+        .testimonial-stars {
+            color: var(--premium-gold);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .footer-brand {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--premium-gold));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Download Modal */
+        .download-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .download-modal.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .modal-content {
+            background: rgba(10, 10, 24, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(0, 102, 255, 0.4);
+        }
+        
+        .download-modal.active .modal-content {
+            transform: translateY(0);
+        }
+        
+        .modal-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        
+        /* Confetti */
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #fde047;
+            animation: confetti-fall 3s ease-out forwards;
+            opacity: 0.7;
+        }
+        
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-80px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Particle Background */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+</head>
+<body>
+    <!-- Particle Background (loaded after DOM) -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="brand-header">
+                <div>
+                    <h1 class="book-title">Build & Boost Your Personal and Business Credit</h1>
+                    <p class="book-subtitle">Without Using Personal Guarantees</p>
+                </div>
+                <div class="brand-name">NEXO</div>
+                <div class="usa-flag"></div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="grid-bg"></div>
+        <div class="container">
+            <div class="content-grid">
+                <!-- Ebook Preview -->
+                <div class="ebook-preview">
+                    <div class="preview-header">
+                        <i class="fas fa-book-open"></i> Elite Ebook Preview
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h2 class="preview-title">Exclusive Credit Building System</h2>
+                        
+                        <div class="preview-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Fully Secure & Confidential</h3>
+                                <p>Your information remains 100% protected with our elite security protocols</p>
+                            </div>
+                        </div>
+                        
+                        <div class="preview-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-unlock"></i>
+                            </div>
+                            <div>
+                                <h3>Separate Personal and Business Credit</h3>
+                                <p>Advanced techniques to build business credit without using your personal SSN</p>
+                            </div>
+                        </div>
+                        
+                        <div class="preview-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3>Rapid Credit Boosting</h3>
+                                <p>Proven strategies to significantly increase your credit score in record time</p>
+                            </div>
+                        </div>
+                        
+                        <div class="preview-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div>
+                                <h3>Access Premium Funding</h3>
+                                <p>Unlock high-limit business loans and credit cards without personal guarantees</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Download Section -->
+                <div>
+                    <!-- Trust Badges -->
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="badge-text">100% Secure</div>
+                        </div>
+                        <div class="trust-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="badge-text">Verified</div>
+                        </div>
+                        <div class="trust-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="badge-text">Trusted</div>
+                        </div>
+                    </div>
+                    
+                    <div class="download-section">
+                        <div class="download-header">
+                            <i class="fas fa-download"></i> Secure Elite Download
+                        </div>
+                        <div class="download-content">
+                            <h2 class="download-title">Instant Access Granted</h2>
+                            <p class="download-subtitle">Select your preferred format or get the complete elite package</p>
+                            
+                            <div class="download-formats">
+                                <a href="https://mega.nz/file/K0gjFZST#inegFKRwvabtnd0RLJdxEwN_xVxWrC4xPbJzfAv__2o" class="format-btn" data-format="PDF">
+                                    <div class="format-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div class="format-name">PDF Format</div>
+                                    <div class="format-badge">Recommended</div>
+                                </a>
+                                
+                                <a href="https://mega.nz/file/L1xzBJ5L#qxGHHeR8OfhIZqWT8ESFX_KclrvLi0CbZEmRBCTYlFw" class="format-btn" data-format="EPUB">
+                                    <div class="format-icon">
+                                        <i class="fas fa-book-open"></i>
+                                    </div>
+                                    <div class="format-name">EPUB Format</div>
+                                    <div class="format-badge">eReader</div>
+                                </a>
+                                
+                                <a href="https://mega.nz/file/W8xWVAzS#PHTjfCJsFdvc74X5TXFG-ytl94repHAUstVOci-IqZw" class="format-btn" data-format="MOBI">
+                                    <div class="format-icon">
+                                        <i class="fab fa-amazon"></i>
+                                    </div>
+                                    <div class="format-name">MOBI Format</div>
+                                    <div class="format-badge">Kindle</div>
+                                </a>
+                                
+                                <a href="https://mega.nz/file/apAW3IBT#R8zEuDJ3p-qkvwVcqNwL2KNECRUPq4DttR3xmbh1lQw" class="format-btn" data-format="AZW3">
+                                    <div class="format-icon">
+                                        <i class="fab fa-kindle"></i>
+                                    </div>
+                                    <div class="format-name">AZW3 Format</div>
+                                    <div class="format-badge">Kindle</div>
+                                </a>
+                            </div>
+                            
+                            <a href="https://mega.nz/file/moRHmJIJ#zrVhoknEI-D4fIY6ZoRsCMg-1DHgCKFRcAv-SEZNsG8" class="download-all" data-format="Complete Package (ZIP)">
+                                <i class="fas fa-crown"></i>
+                                Elite Complete Package (ZIP)
+                            </a>
+                            
+                            <div class="security-note">
+                                <div class="security-icon">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <div>
+                                    <h3>100% Secure & Confidential</h3>
+                                    <p>Your download is protected by elite encryption and security protocols</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp Group Section -->
+                    <div class="whatsapp-section">
+                        <div class="whatsapp-header">
+                            <i class="fab fa-whatsapp"></i> Join Our Exclusive WhatsApp Community
+                        </div>
+                        <div class="whatsapp-content">
+                            <div class="whatsapp-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h2 class="whatsapp-title">Elite Credit Builders Network</h2>
+                            <p class="whatsapp-text">Connect with like-minded entrepreneurs, get exclusive strategies, and receive real-time guidance from credit experts in our private, secure WhatsApp community.</p>
+                            <a href="https://whatsapp.com/channel/0029VbBLWsNAjPXGejlI780k" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> Join Elite Group Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial -->
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">MT</div>
+                            <div>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="testimonial-author">Michael T., Business Owner</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "This elite system completely transformed how I manage business credit. I secured over $150k in funding without personal guarantees! The strategies are next-level and the WhatsApp group support is incredible."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">NEXO ELITE</div>
+                    <div class="footer-tagline">Premium Financial Empowerment for American Entrepreneurs</div>
+                </div>
+                <div class="copyright">
+                    © 2025 Nexo Elite | All Rights Reserved | 100% Secure & Confidential
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Download Modal -->
+    <div class="download-modal" id="downloadModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h2 class="modal-title">Secure Download Initiated!</h2>
+            <p class="modal-text" id="formatText">Your elite content is being prepared for secure delivery.</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <p class="modal-note">
+                <i class="fas fa-shield-alt"></i> 
+                Your download is 100% secure. If it doesn't start, <a href="#" id="directDownload">click here</a>
+            </p>
+        </div>
+    </div>
+    
+    <!-- Deferred JavaScript -->
+    <script>
+        // Load non-critical CSS after page load
+        window.onload = function() {
+            // Load deferred CSS
+            var deferredStyles = document.getElementById('deferred-styles');
+            if (deferredStyles) {
+                var styleContent = deferredStyles.innerHTML;
+                var styleElement = document.createElement('style');
+                styleElement.innerHTML = styleContent;
+                document.head.appendChild(styleElement);
+                deferredStyles.parentNode.removeChild(deferredStyles);
+            }
+            
+            // Create particle background (low priority)
+            setTimeout(createParticles, 1000);
+        };
+        
+        // Create particle background
+        function createParticles() {
+            const container = document.getElementById('particles');
+            if (!container) return;
+            
+            const particleCount = 30; // Reduced from 50 for mobile
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random properties
+                const size = Math.random() * 4 + 2; // Smaller particles
+                const posX = Math.random() * 100;
+                const delay = Math.random() * 15;
+                const duration = Math.random() * 10 + 15;
+                const opacity = Math.random() * 0.5 + 0.1;
+                
+                // Set styles
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}vw`;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${duration}s`;
+                particle.style.opacity = opacity;
+                
+                // Random color (blue or purple shades)
+                const colors = ['#0066ff', '#00c4ff', '#8a2be2'];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.background = randomColor;
+                
+                container.appendChild(particle);
+            }
+        }
+        
+        // Download simulation
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadBtns = document.querySelectorAll('.format-btn, .download-all');
+            const downloadModal = document.getElementById('downloadModal');
+            const modalClose = document.getElementById('modalClose');
+            const formatText = document.getElementById('formatText');
+            const progressBar = document.getElementById('progressBar');
+            const directDownload = document.getElementById('directDownload');
+            
+            // Format mapping for display
+            const formatNames = {
+                'PDF': 'PDF Format',
+                'EPUB': 'EPUB Format',
+                'MOBI': 'MOBI Format',
+                'AZW3': 'AZW3 Format',
+                'HTML': 'HTML Format',
+                'Complete Package (ZIP)': 'Elite Complete Package (ZIP)'
+            };
+            
+            // Handle download button clicks
+            downloadBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const format = this.getAttribute('data-format');
+                    const href = this.getAttribute('href');
+                    
+                    // Update modal text
+                    formatText.textContent = `Your ${formatNames[format]} download is being securely prepared.`;
+                    
+                    // Set direct download link
+                    directDownload.setAttribute('href', href);
+                    
+                    // Show modal
+                    downloadModal.classList.add('active');
+                    
+                    // Simulate download progress
+                    let progress = 0;
+                    const interval = setInterval(() => {
+                        progress += Math.random() * 10;
+                        if (progress >= 100) {
+                            progress = 100;
+                            clearInterval(interval);
+                            
+                            // Create confetti effect
+                            createConfetti();
+                            
+                            // Redirect to actual download after completion
+                            setTimeout(() => {
+                                window.location.href = href;
+                            }, 1000);
+                        }
+                        progressBar.style.width = `${progress}%`;
+                    }, 100);
+                });
+            });
+            
+            // Close modal
+            modalClose.addEventListener('click', function() {
+                downloadModal.classList.remove('active');
+                progressBar.style.width = '0%';
+            });
+            
+            // Create confetti effect
+            function createConfetti() {
+                const colors = ['#fde047', '#60a5fa', '#34d399', '#f87171', '#a78bfa'];
+                const container = document.querySelector('.modal-content');
+                if (!container) return;
+                
+                for (let i = 0; i < 30; i++) { // Reduced from 50 for mobile
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.left = `${Math.random() * 100}%`;
+                    confetti.style.animationDelay = `${Math.random() * 2}s`;
+                    container.appendChild(confetti);
+                    
+                    // Remove confetti after animation
+                    setTimeout(() => {
+                        if (confetti.parentNode) {
+                            confetti.remove();
+                        }
+                    }, 3000);
+                }
+            }
+            
+            // Close modal when clicking outside
+            downloadModal.addEventListener('click', function(e) {
+                if (e.target === downloadModal) {
+                    downloadModal.classList.remove('active');
+                    progressBar.style.width = '0%';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
